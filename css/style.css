@@ -78,27 +78,27 @@ header {
 
 }
 
-.about h1 a{
+.about a{
 
   text-decoration: none;
 color: black;
 
 }
 
-.about h1 a:hover{
+.about a:hover{
 
   text-decoration: none;
 color: white;
 
 }
 
-.Contact h1 a{
+.Contact a{
 
   text-decoration: none;
 color: black;
 }
 
-.Contact h1 a:hover{
+.Contact a:hover{
 
   text-decoration: none;
 color: white;
