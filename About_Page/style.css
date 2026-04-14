@@ -1,11 +1,17 @@
 body {
-  background-color: #E02420;
+  background-color: #EB2400;
   margin: 0;
 
   display: flex;
   justify-content: center;   /* horizontal center */
   align-items: center;       /* vertical center */
   height: 100vh;             /* full viewport height */
+   background-image: url('Gratis_Website_Mockup.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh
 }
 h1 {
   bottom: 10px;  
@@ -99,19 +105,6 @@ color: black;
 }
 
 .Contact h1 a:hover{
-
-  text-decoration: none;
-color: white;
-
-}
-
-h1 a{
-
-  text-decoration: none;
-color: black;
-}
-
- h1 a:hover{
 
   text-decoration: none;
 color: white;
