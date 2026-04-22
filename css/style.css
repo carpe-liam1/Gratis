@@ -77,11 +77,16 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
 
 }
-
+.about {
+    bottom: 10px;  
+  font-size: 1em;
+  text-align: center;
+}
 .about a{
 
   text-decoration: none;
 color: black;
+
 
 }
 
@@ -91,7 +96,11 @@ color: black;
 color: white;
 
 }
-
+.Contact {
+    bottom: 10px;  
+  font-size: 1em;
+  text-align: center;
+}
 .Contact a{
 
   text-decoration: none;

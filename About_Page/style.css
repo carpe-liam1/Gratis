@@ -110,3 +110,111 @@ color: black;
 color: white;
 
 }
+
+h2 {
+position: absolute;
+    top: 20px;  
+    left: 150px; 
+}
+
+.movable-image {
+    position: absolute;
+    
+    /* Change these numbers to move it anywhere on the screen */
+    top: 80px;  
+    left: 45%;   
+    
+    width: 600px; /* Adjust size of your Adobe export */
+    z-index: 10;  /* Ensures it stays on top of other elements */
+}
+
+.about-text1, .about-text2, .about-text3, .about-text4, .about-text5, .about-text6, .about-text7, .about-text8, .about-text9, .about-text10, .about-text2v2, .about-text5v2, .about-text7v2{
+  font-size: 30px;
+}
+.about-text1 {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+.about-text2 {
+  position: absolute;
+  top: 125px;
+  left: 70px;
+}
+.about-text2v2 {
+  position: absolute;
+  top: 145px;
+  left: 265px;
+}
+.about-text3 {
+  position: absolute;
+  top: 170px;
+  left: 100px;
+}
+.about-text4 {
+  position: absolute;
+  top: 195px;
+  left: 130px;
+}
+.about-text5 {
+  position: absolute;
+  top: 220px;
+  left: 160px;
+}
+
+.about-text5v2 {
+  position: absolute;
+  top: 245px;
+  left: 610px;
+}
+
+.about-text6 {
+  position: absolute;
+  top: 270px;
+  left: 200px;
+}
+.about-text7 {
+  position: absolute;
+  top: 295px;
+  left: 230px;
+}
+
+.about-text7v2 {
+  position: absolute;
+  top: 320px;
+  left: 460px;
+}
+.about-text8 {
+  position: absolute;
+  top: 345px;
+  left: 270px;
+}
+.about-text9 {
+  position: absolute;
+  top: 370px;
+  left: 300px;
+}
+.about-text10 {
+  position: absolute;
+  top: 395px;
+  left: 360px;
+}
+
+.here {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  top: 306px;
+  left: 1143px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.here:hover {
+  position: absolute;
+  text-decoration: none;
+  color: black;
+  top: 304px;
+  left: 1145px;
+  font-size: 18px;
+  font-weight: bold;
+}
