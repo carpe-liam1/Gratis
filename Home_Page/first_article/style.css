@@ -1,5 +1,6 @@
 body {
-  background-color: #E02420;
+  background-color: #FCF5E5
+  ;
   margin: 0;
 
   display: flex;
@@ -126,25 +127,7 @@ color: black;
 color: white;
 
 }
-
-.photo {
-  margin: 20px 0;
+ 
+.article{
+    margin-top: 120px;
 }
-
-.photo1 img {
-  max-width: 20%;
-  height: auto;
-   position: absolute;
-  top: 140px;
-  left: 405px;
-}
-
-
-.photo2 img {
-  max-width: 15%;
-  height: auto;
-   position: absolute;
-  top: 340px;
-  left: 105px;
-}
-
