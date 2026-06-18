@@ -1,0 +1,146 @@
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    z-index: 100;
+}
+
+.Aboutlink, .homelink, .contactlink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-color: #E02420; 
+  
+  /* Added height to fill out the 80px header height completely */
+  height: 100%; 
+}
+
+/* Enlarged styling moved to the contactlink since it is now active */
+.contactlink h1 {
+    font-size: 4vw;
+    margin-top: 0vw;
+
+}
+
+/* About link styled as standard header text now */
+.Aboutlink a {
+    text-decoration: none;
+    color: black;
+}
+
+.Aboutlink a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.homelink a {
+    text-decoration: none;
+    color: black;
+}
+
+.homelink a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+header h1 {
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+body {
+    background-color:#FCF5E5;
+    margin: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centered content box to display information cleanly */
+.contact-container {
+    text-align: center;
+    max-width: 60vw;
+    z-index: 10;
+    margin-top: 5vh; /* Pushes content down slightly below the large header text */
+}
+
+.contact-lead {
+    font-size: 1.9vw; /* Keeps the uniform text sizing from the About page adjustments */
+    color: black;
+    margin-bottom: 4vh;
+    line-height: 1.4;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.contact-email {
+    font-size: 2.5vw; /* Emphasizes the main email contact point */
+    font-weight: bold;
+    color: black;
+    margin: 0;
+}
+
+.contact-submission {
+    font-size: 1.9vw;
+    color: black;
+    margin: 0;
+}
+
+.form-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.form-link:hover {
+    color: white;
+}
+
+/* --- MOBILE RESET --- */
+@media (max-width: 768px) {
+    body {
+        justify-content: flex-start;
+    }
+
+    .contact-container {
+        max-width: 90vw;
+        padding-top: 120px;
+        margin-top: 0;
+    }
+    
+    .contact-lead, .contact-submission {
+        font-size: 1.2rem;
+    }
+
+    .contact-email {
+        font-size: 1.5rem;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    z-index: 100;
+    color: white;
+}

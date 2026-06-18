@@ -1,132 +1,153 @@
-
 header {
+
     position: absolute;
     top: 0;
     width: 100%;
-    height: 80px; /* Increased height slightly for <h1> tags */
-    
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; /* Creates 3 equal columns */
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    z-index: 100; /* Keeps it above the absolute positioned text */
+    z-index: 100;
 }
-
 
 .Aboutlink, .homelink, .contactlink {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: #E02420; 
+  
+  /* Added height to fill out the 80px header height completely */
+  height: 100%; 
 }
 
 .Aboutlink h1 {
-font-size: 4vw;
-margin-top: 1vw;
-} 
+    font-size: 4vw;
+    margin-top: 0vw;
+}
 
 .homelink a {
-  text-decoration: none;
-  color: black;
-
+    text-decoration: none;
+    color: black;
 }
 
 .homelink a:hover {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
+}
 
+.contactlink a {
+     text-decoration: none; 
+     font-weight: bold;
+    font-size: 1.5vw; 
+    color: black; 
+}
+
+.contactlink a:hover {
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    color: white;
 }
 
 header h1 {
-    font-size: 1.5vw; 
+    font-size: 1.5vw;
     margin: 0;
 }
 
-
 body {
-    background-color: #EB2400;
+    background-color: #FCF5E5;
     margin: 0;
-    /* Removed flex centering because your text uses absolute positioning */
     height: 100vh;
-    background-image: url('Gratis_Website_Mockup.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    overflow-x: hidden; /* Prevents side-scrolling on smaller tabs */
+    overflow-x: hidden;
 }
 
-/* Font sizes scale with the width of the window */
-.about-text1, .about-text2, .about-text3, .about-text4, .about-text5, 
-.about-text6, .about-text7, .about-text8, .about-text9, .about-text10, 
-.about-text2v2, .about-text5v2, .about-text7v2 {
-    font-size: 2.1vw; /* Scales text fluidly */
+/* Global text sizing, color, and consistent line-height rules */
+p[class^="about-text"] {
+    font-size: 1.7vw; 
     position: absolute;
-    white-space: nowrap; /* Keeps lines from breaking and ruining the slant */
+    white-space: nowrap; /* Prevents text from breaking early */
+    margin: 0;
+    padding: 0;
+    color: black; /* Change to white if your background shape is dark */
 }
 
-/* Positioning using vw/vh so the 'shape' scales with the tab */
-.about-text1   { top: 10vh; left: 4vw; }
-.about-text2   { top: 14vh; left: 7vw; }
-.about-text2v2 { top: 19vh; left: 21vw; }
-.about-text3   { top: 23vh; left: 12vw; }
-.about-text4   { top: 27vh; left: 15vw; }
-.about-text5   { top: 31vh; left: 18vw; }
-.about-text5v2 { top: 37vh; left: 51vw; }
-.about-text6   { top: 41vh; left: 22vw; }
-.about-text7   { top: 44vh; left: 25vw; }
-.about-text7v2 { top: 50vh; left: 43vw; }
-.about-text8   { top: 54vh; left: 28vw; }
-.about-text9   { top: 58vh; left: 33vw; }
-.about-text10  { top: 62vh; left: 37vw; }
+/* Inline typography styling */
+.contact-inline-link, .here {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.contact-inline-link:hover, .here:hover {
+    color: black;
+}
+
+/* 
+   TEXT WAVE SHAPE ALIGNMENT 
+   Nudge these vh (vertical) and vw (horizontal) values 
+   to perfectly align the text into your background image area.
+*/
+p[class^="about-text"] {
+    font-size: 1.9vw; /* Increased slightly to fill out the negative space better */
+    position: absolute;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.about-text1  { top: 12vh; left: 5vw; }
+.about-text2  { top: 18.5vh; left: 7vw; }
+.about-text3  { top: 25vh; left: 9vw; }
+.about-text4  { top: 31.5vh; left: 11vw; }
+.about-text5  { top: 38vh; left: 13vw; }
+.about-text6  { top: 44.5vh; left: 15vw; }
+.about-text7  { top: 51vh; left: 17vw; }
+.about-text8  { top: 57.5vh; left: 19vw; }
+.about-text9  { top: 64vh; left: 21vw; }
+.about-text10 { top: 70.5vh; left: 23vw; }
+.about-text11 { top: 77vh; left: 25vw; }
+.about-text12 { top: 83.5vh; left: 27vw; }
+.about-text13 { top: 90vh; left: 29vw; }
 
 .movable-image {
     position: absolute;
-    top: 11vh;
-    left: 48vw;
-    width: 45vw; /* Image scales with window */
+    top: 15vh;      /* Pushed down slightly to balance with the expanded text layout */
+    left: 54vw; 
+    width: 42vw;
     z-index: 10;
 }
 
-.here {
-    position: absolute;
-    text-decoration: none;
-    color: white;
-    top: 44.7vh; 
-    left: 91.5vw;
-    font-size: 1.5vw;
-    font-weight: bold;
-}
-
 /* --- MOBILE RESET --- */
-/* When the screen is narrow (mobile), we stack the text normally */
 @media (max-width: 768px) {
     main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 80px;
+        padding-top: 100px;
+        padding-bottom: 80px;
     }
     
-    .about-text1, .about-text2, .about-text3, .about-text4, .about-text5, 
-    .about-text6, .about-text7, .about-text8, .about-text9, .about-text10, 
-    .about-text2v2, .about-text5v2, .about-text7v2 {
-        position: static; /* Removes the slant */
+    p[class^="about-text"] {
+        position: static;
         font-size: 1.2rem;
         text-align: center;
         white-space: normal;
-        margin: 10px 20px;
+        margin: 8px 20px;
     }
-
+    
     .movable-image {
         position: relative;
         width: 80%;
         left: 0;
         top: 0;
-    }
-
-    .here {
-        position: static;
-        font-size: 1.5rem;
-        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
 
@@ -136,7 +157,8 @@ footer {
     left: 0;
     width: 100%;
     text-align: center;
-    background: rgba(0, 0, 0, 0.5); /* Optional: makes it readable over background */
+    background: rgba(0, 0, 0, 0.5);
     padding: 10px 0;
     z-index: 100;
+    color: white;
 }

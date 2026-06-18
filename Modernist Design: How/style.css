@@ -1,0 +1,165 @@
+body { 
+    background-color: #FCF5E5; 
+    margin: 0; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+/* --- Your Header Styles (Completely Untouched) --- */
+h1 { 
+    bottom: 10px; 
+    font-size: 1em; 
+    text-align: center; 
+}
+
+header { 
+    position: absolute; 
+    top: 0; 
+    width: 100%; 
+    height: 50px; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    align-items: center; 
+}
+
+.about { 
+    bottom: 10px; 
+    font-size: 1em; 
+    text-align: center; 
+}
+
+.about a { 
+    text-decoration: none; 
+    color: black; 
+}
+
+.about a:hover { 
+    text-decoration: none; 
+    color: white; 
+}
+
+.Contact { 
+    bottom: 10px; 
+    font-size: 1em; 
+    text-align: center; 
+}
+
+.Contact a { 
+    text-decoration: none; 
+    color: black; 
+}
+
+.Contact a:hover { 
+    text-decoration: none; 
+    color: white; 
+}
+
+h1 a { 
+    text-decoration: none; 
+    color: black; 
+}
+
+h1 a:hover { 
+    text-decoration: none; 
+    color: white; 
+}
+
+/* --- Expanded Width & Distance From Header --- */
+main { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%;
+    margin-top: 150px; 
+    padding-bottom: 120px; 
+    box-sizing: border-box;
+}
+
+.essay-container {
+    max-width: 1000px; 
+    width: 85%; 
+    text-align: center; 
+}
+
+.abstract-section, .essay-body {
+    margin-bottom: 60px; 
+}
+
+/* Section Headings */
+.essay-container h2 {
+    font-size: 1.35em; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    color: #111;
+    text-align: center;
+}
+
+/* --- Larger Centered Text & Enhanced Spacing --- */
+.article { 
+    font-size: 1.5em; 
+    line-height: 1.85; 
+    text-align: center; 
+    margin-bottom: 36px; 
+    color: #1a1a1a; 
+}
+
+.Title {
+    font-size: 2em;
+    line-height: 1.85;
+    text-align: center;
+    margin-bottom: 36px;
+    margin-right: 8vw;
+    color: #1a1a1a;
+}
+
+.Author {
+    font-size: 1.25em;
+    line-height: 1.85;
+    text-align: left;
+    margin-bottom: 36px;
+    color: #1a1a1a;
+}
+
+/* --- Fixed Transparent Footer (Updated from your sample CSS) --- */
+footer { 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    text-align: center; 
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 10px 0; 
+    z-index: 100; 
+    color: white; /* Switched text color to white for contrast against dark transparency */
+}
+
+.author-section {
+    width: 100%;
+ 
+    margin-bottom: 40px; /* Generous vertical gap below the author details */
+    margin-left: 2vw; 
+}
+
+.author-label {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #666; /* Subdued gray color for meta label */
+    display: block;
+    margin-bottom: 4px;
+}
+
+.author-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+/* --- Your Unchanged Wheel & Layout Styles --- */
+#question { display: flex; align-items: center; gap: 150px; font-size: 5em; margin: 0; }
+.wheel-container { display: inline-block; width: 300px; height: 1em; vertical-align: middle; perspective: 1000px; }
+.wheel { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; transition: filter 0.1s linear, opacity 0.1s linear; }
+.wheel-link:hover { color: black; cursor: pointer; }
